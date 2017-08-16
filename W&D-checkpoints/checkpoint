@@ -1,0 +1,2 @@
+model_checkpoint_path: "Lpoint_W&D-10000"
+all_model_checkpoint_paths: "Lpoint_W&D-10000"
