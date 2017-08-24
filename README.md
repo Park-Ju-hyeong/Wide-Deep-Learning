@@ -24,20 +24,17 @@ feature_cols = {**continuous_cols , **categorical_cols}
 Tensorflow Queue를 이용해야 하는데.. 실력이 부족합니다.  
 
 
-```mermaid
+<div class="mermaid">
 graph TD
     Doc2Vec--> Wide
     Item --> Doc2Vec
-    
     cross_columns --> Wide
-
     Doc2Vec--> Deep 
     User_Features --> Deep
-
     Wide--> Train
     Deep--> Train
     Train --> Label
-```
+</div>
 
 Train : $$P(Y=1|x) = \sigma \left ( W_{wide}^T [x, \Phi(x)] + W_{deep}^T a^(l_f) + b \right )$$
              
