@@ -38,6 +38,7 @@ graph TD
     Deep--> Train
     Train --> Label
 ```
+![](./images/Wide_Deep_Model.png)
 
 
 
@@ -47,6 +48,7 @@ prediction :  ![Train](http://latex.codecogs.com/gif.latex?%5Cfn_jvn%20%5Csmall%
 * [Wide & Deep - Recommender system  / 추천시스템](https://github.com/Park-Ju-hyeong/Wide-Deep-Learning/blob/master/Wide%2526Deep%2BRecommendation-Final-Final.ipynb)  
 
 * [Wide | Deep | Wide&Deep - 모형별 비교](https://github.com/Park-Ju-hyeong/Wide-Deep-Learning/blob/master/Wide%2526Deep%2BRecommendation-%255BWide%2Bvs%2BDeep%255D.ipynb)  
+ 
 ![](./images/Wide_Deep_Model2.png)
 
 ---
