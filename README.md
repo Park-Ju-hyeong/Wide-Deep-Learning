@@ -9,6 +9,12 @@
 
 * [Wide & Deep - paper](https://arxiv.org/abs/1606.07792)
 
+* [Wide & Deep - Recommender system  / 추천시스템](https://github.com/Park-Ju-hyeong/Wide-Deep-Learning/blob/master/Wide%2526Deep%2BRecommendation-Final-Final.ipynb)  
+
+* [Wide | Deep | Wide&Deep - 모형별 비교](https://github.com/Park-Ju-hyeong/Wide-Deep-Learning/blob/master/Wide%2526Deep%2BRecommendation-%255BWide%2Bvs%2BDeep%255D.ipynb)  
+
+![](./images/Wide_Deep_Model2.png)
+
 ---
 
 * [TensorFlow Wide & Deep Learning Tutorial - with Census Data](https://github.com/Park-Ju-hyeong/Wide-Deep-Learning/blob/master/Wide%2B%26%2BDeep%2BLearning%2Bwith%2BCensus%2BData.ipynb) 는 Tensorflow 에서 제공하는 함수를 이용해서 만든 파일입니다. 
@@ -43,13 +49,7 @@ graph TD
 
 
 prediction :  ![Train](http://latex.codecogs.com/gif.latex?%5Cfn_jvn%20%5Csmall%20P%28Y%3D1%7Cx%29%20%3D%20%5Csigma%20%5Cleft%20%28%20W_%7Bwide%7D%5ET%20%5Bx%2C%20%5CPhi%28x%29%5D%20&plus;%20W_%7Bdeep%7D%5ET%20a%5E%7B%28l_f%29%7D%20&plus;%20b%20%5Cright%20%29)
-             
-
-* [Wide & Deep - Recommender system  / 추천시스템](https://github.com/Park-Ju-hyeong/Wide-Deep-Learning/blob/master/Wide%2526Deep%2BRecommendation-Final-Final.ipynb)  
-
-* [Wide | Deep | Wide&Deep - 모형별 비교](https://github.com/Park-Ju-hyeong/Wide-Deep-Learning/blob/master/Wide%2526Deep%2BRecommendation-%255BWide%2Bvs%2BDeep%255D.ipynb)  
  
-![](./images/Wide_Deep_Model2.png)
 
 ---
 ## 요구되는
