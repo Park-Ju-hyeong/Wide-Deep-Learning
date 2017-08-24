@@ -1,3 +1,6 @@
+<meta name="generator" content="pandoc" />
+
+
 # 해당 문서는
 
 `Wide & Deep Learning with Tensorflow` 을 공부하면서 만든 ipynb 파일입니다.
@@ -21,27 +24,30 @@ feature_cols = {**continuous_cols , **categorical_cols}
 ---
 
 처음에는 Tensorflow에서 제공하는 `DNNLinearCombined` 함수를 이용해서 제작할 생각이었습니다.  하지만 high level api 함수에서 batch로 넣는 법을 몰라 Low level Tensorflow로 직접 짜게 되었습니다.  
-Tensorflow Queue를 이용해야 하는데.. 실력이 부족합니다.  
+(Tensorflow Queue를 이용해야 한다고 합니다.)
 
 
-<div class="mermaid">
+```mermaid
 graph TD
     Doc2Vec--> Wide
     Item --> Doc2Vec
     cross_columns --> Wide
     Doc2Vec--> Deep 
     User_Features --> Deep
-    Wide--> Train
+    Wide--> Train 
     Deep--> Train
     Train --> Label
-</div>
+```
 
-Train : $$P(Y=1|x) = \sigma \left ( W_{wide}^T [x, \Phi(x)] + W_{deep}^T a^(l_f) + b \right )$$
+
+
+prediction :  ![Train](http://latex.codecogs.com/gif.latex?%5Cfn_jvn%20%5Csmall%20P%28Y%3D1%7Cx%29%20%3D%20%5Csigma%20%5Cleft%20%28%20W_%7Bwide%7D%5ET%20%5Bx%2C%20%5CPhi%28x%29%5D%20&plus;%20W_%7Bdeep%7D%5ET%20a%5E%7B%28l_f%29%7D%20&plus;%20b%20%5Cright%20%29)
              
 
-* [Wide & Deep - Recommender system  / 추천시스템](https://github.com/Park-Ju-hyeong/Wide-Deep-Learning/blob/master/Wide%2526Deep%2BRecommendation-Final-Final.ipynb)
+* [Wide & Deep - Recommender system  / 추천시스템](https://github.com/Park-Ju-hyeong/Wide-Deep-Learning/blob/master/Wide%2526Deep%2BRecommendation-Final-Final.ipynb)  
 
-* [Wide | Deep | Wide&Deep - 모형별 비교](https://github.com/Park-Ju-hyeong/Wide-Deep-Learning/blob/master/Wide%2526Deep%2BRecommendation-%255BWide%2Bvs%2BDeep%255D.ipynb)
+* [Wide | Deep | Wide&Deep - 모형별 비교](https://github.com/Park-Ju-hyeong/Wide-Deep-Learning/blob/master/Wide%2526Deep%2BRecommendation-%255BWide%2Bvs%2BDeep%255D.ipynb)  
+![](./images/Wide_Deep_Model2.png)
 
 ---
 ## 요구되는
