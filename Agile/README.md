@@ -10,7 +10,7 @@ Wide & Deep Model for Recommendation 문서입니다.
 
 * 정제된 데이터를 Wide & Deep 모형에 넣고 상품 추천을 합니다.  
 
-[[Wide&Deep] Recommendation.ipynb](https://github.com/Park-Ju-hyeong/Wide-Deep-Learning/blob/master/Agile/%5BWide%26Deep%5D%20Recommendation.ipynb)
+[[Wide&Deep] Recommendation.ipynb](https://github.com/Park-Ju-hyeong/Wide-Deep-Learning/blob/master/Agile/%5BWide%26Deep%5D%20Recommendation.ipynb)  
 [Recommendation.py](https://github.com/Park-Ju-hyeong/Wide-Deep-Learning/blob/master/Agile/Recommendation.py)
 
 
