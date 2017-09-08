@@ -30,7 +30,7 @@ def load_train_data():
 
     
 def load_test_data():
-    
+
     # Test
 
     test_data = pd.read_csv("./Lpoint_data/test_data.csv", encoding="cp949")
@@ -49,6 +49,21 @@ def load_test_data():
     test_continuous = test_continuous.fillna(0)
     
     return test_data, test_categorical, test_continuous, test_Segment, test_label, test_label_eval
+
+
+def load_pred_data():
+
+    # Pred
+
+    pred_label = pd.read_csv("./Lpoint_data/pred_label.csv", encoding="cp949")
+    pred_label_eval = pd.read_csv("./Lpoint_data/pred_label_real.csv", encoding="cp949")
+    pred_categorical = pd.read_csv("./Lpoint_data/pred_categorical.csv", encoding="cp949")
+    pred_continuous = pd.read_csv("./Lpoint_data/pred_continuous.csv", encoding="cp949")
+
+    pred_continuous = pred_continuous.fillna(0)
+
+    return pred_label, pred_label_eval, pred_categorical, pred_continuous
+
 
 
 def load_Wide_Deep_train_data():
@@ -80,7 +95,8 @@ def print_download_progress(count, block_size, total_size):
 
 
 def Lpoint_data_auoto_download():
-    url = "https://www.dropbox.com/s/zn8r9refkgfm12n/Lpoint_data.zip?dl=1"
+
+    url = "https://www.dropbox.com/s/q1vc3lxp45skz98/Lpoint_data.zip?dl=1"
 
     download_dir = "Lpoint_data/"
 

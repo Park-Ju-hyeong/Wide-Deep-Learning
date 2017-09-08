@@ -8,9 +8,12 @@ from tensorflow.contrib import layers
 from datetime import datetime
 import os
 
+# 전처리된 데이터 로드
 Wide_data, Deep_data,train_label = Agile_data.load_Wide_Deep_train_data()
 Wide_data_test, Deep_data_test, test_label = Agile_data.load_Wide_Deep_test_data()
 
+
+# 모형 파라미터 선정
 learning_rate = 1e-4
 training_epochs = 10
 batch_size = 256
@@ -33,6 +36,7 @@ Y = tf.placeholder(tf.float32, [None, output_size])
 train_mode = tf.placeholder(tf.bool, name='train_mode')
 
 
+# Hit-rate 계산하는 함수
 def get_acc(score_matrix, top_n, test_matix):
     avg_acc = 0
     for i in range(len(score_matrix)):
@@ -95,6 +99,8 @@ optimizer = tf.train.AdamOptimizer(learning_rate=learning_rate).minimize(cost)
 
 Wide_n_Deep_ACC_plot = []
 
+
+# Wide & Deep 돌아가는 메인 함수
 def Wide_n_Deep_Model(training_epochs = 10):
     
     feed_dict_test = {Wide: Wide_data_test,

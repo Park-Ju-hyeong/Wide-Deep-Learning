@@ -1,0 +1,6 @@
+model_checkpoint_path: "WnD_tensorflow-19"
+all_model_checkpoint_paths: "WnD_tensorflow-14"
+all_model_checkpoint_paths: "WnD_tensorflow-15"
+all_model_checkpoint_paths: "WnD_tensorflow-16"
+all_model_checkpoint_paths: "WnD_tensorflow-18"
+all_model_checkpoint_paths: "WnD_tensorflow-19"
