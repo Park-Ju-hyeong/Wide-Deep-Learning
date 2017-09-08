@@ -33,7 +33,9 @@ Wide & Deep Model for Recommendation 문서입니다.
 Linux 계열
 UBUNTU
 ```
-> 윈도우에서 `urllib` 패키지가 정상작동하지 않는 것 같습니다.
+> 윈도우에서 `urllib` 패키지가 정상작동하지 않는 것 같습니다.  
+윈도우에서 돌리시는 분은 `Lpoint_data` 을 언집하여 직접 로들 부탁드리겠습니다.
+
 
 ## Install requirements
 
