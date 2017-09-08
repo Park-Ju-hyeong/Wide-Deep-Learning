@@ -37,12 +37,22 @@ feature_cols = {**continuous_cols , **categorical_cols}
 graph TD
     Doc2Vec--> Wide
     Item --> Doc2Vec
+    Item_Category --> cross_columns
     cross_columns --> Wide
+    Item_Category --> Deep
     Doc2Vec--> Deep 
-    User_Features --> Deep
-    Wide--> Train 
-    Deep--> Train
-    Train --> Label
+    User_Features --> Embedding
+    Embedding --> Deep
+    Wide--> Hypothesis 
+    Deep--> Hypothesis
+    Hypothesis --> Target
+```
+
+```mermaid
+graph TD
+    cross_colum --> a
+    cross_columns
+
 ```
 ![](./images/Wide_Deep_Model.png)
 
