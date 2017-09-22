@@ -1,2 +1,0 @@
-tensorflow-gpu==1.2.0
-gensim==0.13.4.1

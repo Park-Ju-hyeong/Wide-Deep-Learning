@@ -50,9 +50,17 @@ graph TD
 
 ```mermaid
 graph TD
-    cross_colum --> a
-    cross_columns
+    real_data --> Generater
+    Generater --> Discriminator1
+    real_data --> Discriminator1
+    standard_norm --> Inferencer
 
+    ranodm_norm --> Inferencer
+    Inferencer --> Discriminator2
+    ranodm_norm --> Discriminator2
+
+    Discriminator1 --> D_loss
+    Discriminator2 --> D_loss
 ```
 ![](./images/Wide_Deep_Model.png)
 
